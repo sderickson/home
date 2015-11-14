@@ -6,12 +6,10 @@ cookieParser = require 'cookie-parser'
 bodyParser = require 'body-parser'
 
 mongoose = require 'mongoose'
-Grid = require 'gridfs-stream'
 express = require 'express'
 compressible = require 'compressible'
 path = require 'path'
 useragent = require 'express-useragent'
-fs = require 'graceful-fs'
 http = require 'http'
 
 config = require './server-config'
