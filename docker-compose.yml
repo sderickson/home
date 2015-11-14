@@ -1,0 +1,19 @@
+nginx:
+  image: nginx
+  ports:
+  - "80:80"
+  volumes:
+  - ./server/nginx:/etc/nginx
+  links:
+  - web1:web1
+  - web2:web2
+
+web1:
+  image: sderickson/home
+  environment:
+    HOME_IS_PRODUCTION: true
+    
+web2:
+  image: sderickson/home
+  environment:
+    HOME_IS_PRODUCTION: true
