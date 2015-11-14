@@ -11,6 +11,7 @@ compressible = require 'compressible'
 path = require 'path'
 useragent = require 'express-useragent'
 http = require 'http'
+fs = require 'fs'
 
 config = require './server-config'
 
