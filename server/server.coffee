@@ -7,7 +7,6 @@ bodyParser = require 'body-parser'
 
 mongoose = require 'mongoose'
 express = require 'express'
-compressible = require 'compressible'
 path = require 'path'
 useragent = require 'express-useragent'
 http = require 'http'
