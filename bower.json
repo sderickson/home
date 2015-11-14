@@ -1,0 +1,9 @@
+{
+  "name": "Scott Erickson's Home Page",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "frimfram": "~0.1.0"
+  }
+}
