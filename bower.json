@@ -1,9 +1,13 @@
 {
-  "name": "Scott Erickson's Home Page",
+  "name": "scott-erickson-home",
   "version": "0.1.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "frimfram": "~0.1.0"
+    "backbone": "~1.2.3",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "lodash": "~3.10.1",
+    "moment": "~2.10.6"
   }
 }
