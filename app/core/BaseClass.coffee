@@ -1,3 +1,6 @@
+_ = require 'underscore'
+Backbone = require 'backbone'
+
 class BaseClass
   listenToShortcuts: ->
     return unless @shortcuts

@@ -1,4 +1,5 @@
 View = require 'core/View'
+_ = require 'underscore'
 
 class RootView extends View
 

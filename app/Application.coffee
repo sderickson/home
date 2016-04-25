@@ -1,3 +1,8 @@
+window.jQuery = $ = require 'jquery'
+Backbone = require 'backbone'
+_ = require 'underscore'
+Bootstrap = require 'bootstrap'
+
 Router = require 'Router'
 BaseClass = require 'core/BaseClass'
 

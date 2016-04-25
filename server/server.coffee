@@ -11,6 +11,7 @@ path = require 'path'
 useragent = require 'express-useragent'
 http = require 'http'
 fs = require 'fs'
+compression = require 'compression'
 
 config = require './server-config'
 
@@ -28,6 +29,7 @@ module.exports.start = (readyCallback) ->
   app = express()
   app.set 'port', config.port
   app.set 'env', if config.isProduction then 'production' else 'development'
+  app.use(compression())
   app.use(express.static(path.join(__dirname, '../public')))
   app.use(express.static(path.join(__dirname, '../bower_components/bootstrap')))
   app.use(morgan('dev'))

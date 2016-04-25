@@ -1,3 +1,5 @@
+Backbone = require 'backbone'
+
 class Collection extends Backbone.Collection
 
   state: 'standby' # or 'fetching'

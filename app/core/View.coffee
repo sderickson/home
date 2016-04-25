@@ -1,5 +1,6 @@
 BaseClass = require 'core/BaseClass'
-
+_ = require 'underscore'
+Backbone = require 'backbone'
 
 class View extends Backbone.View
 

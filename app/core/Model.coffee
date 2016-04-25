@@ -1,3 +1,6 @@
+Backbone = require 'backbone'
+_ = require 'underscore'
+
 class Model extends Backbone.Model
 
   constructor: (attributes, options) ->

@@ -1,4 +1,4 @@
-View = require '../View'
+View = require 'core/View'
 
 class Modal extends View
   @visibleModal: null

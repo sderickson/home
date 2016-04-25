@@ -1,5 +1,7 @@
 NotFoundView = require('views/NotFoundView')
 go = (path) -> -> @routeDirectly path, arguments
+_ = require 'underscore'
+Backbone = require 'backbone'
 
 class Router extends Backbone.Router
 
