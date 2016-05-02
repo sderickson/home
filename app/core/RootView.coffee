@@ -10,7 +10,7 @@ class RootView extends View
 
   title: _.noop
 
-  @globalTitle: _.noop
+  @globalTitle: 'Scott Erickson'
 
   onLeaveMessage: _.noop
 

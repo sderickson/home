@@ -9,13 +9,9 @@ BaseClass = require 'core/BaseClass'
 class Application extends BaseClass
   router: new Router()
 
-  constructor: (options={}) ->
-    options = _.defaults options, {
-      watchForErrors: true
-      preventBackspace: true
-    }
-    @watchForErrors() if options.watchForErrors
-    $(document).bind('keydown', @preventBackspace) if options.preventBackspace
+  constructor: ->
+    @watchForErrors()
+    $(document).bind('keydown', @preventBackspace)
   
   start: ->
     Backbone.history.start({ pushState: true })
@@ -28,7 +24,7 @@ class Application extends BaseClass
       alert.addClass('in')
       alert.alert()
 
-  preventBackspace: (e) ->
+  preventBackspace: (e) =>
     if e.keyCode is 8 and not @elementAcceptsKeystrokes(e.srcElement or e.target)
       e.preventDefault()
 

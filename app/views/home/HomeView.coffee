@@ -1,6 +1,7 @@
 RootView = require 'core/RootView'
 
 class HomeView extends RootView
-  template: require 'templates/home-view'
+  id: 'home-view'
+  template: require './home-view'
 
 module.exports = HomeView

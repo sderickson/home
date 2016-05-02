@@ -1,4 +1,4 @@
-NotFoundView = require('views/NotFoundView')
+NotFoundView = require('views/not-found/NotFoundView')
 go = (path) -> -> @routeDirectly path, arguments
 _ = require 'underscore'
 Backbone = require 'backbone'
@@ -8,7 +8,7 @@ class Router extends Backbone.Router
   #- Routing map
   
   routes:
-    '': go('HomeView')
+    '': go('home/HomeView')
     
     '*name': 'showNotFoundView'
 
