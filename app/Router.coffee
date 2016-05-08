@@ -8,7 +8,10 @@ class Router extends Backbone.Router
   #- Routing map
   
   routes:
-    '': go('home/HomeView')
+    '': go('home/View')
+    about: go('about/View')
+    connect: go('connect/View')
+    projects: go('projects/View')
     
     '*name': 'showNotFoundView'
 

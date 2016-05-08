@@ -1,0 +1,41 @@
+@import "app/core/styles/variables";
+
+#base-nav {
+  
+  min-height: 20px;
+
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  
+  background-color: $darkblue;
+  a {
+    color: $white;
+    line-height: 10px;
+    text-shadow: none;
+    &:hover {
+      color: $black;
+    }
+  }
+  
+  margin-bottom: 50px;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  background: url("/images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: $white;
+  line-height: 24px;
+}
+
+p {
+  margin: 24px 0;
+}
+
+.well {
+  background: rgba(231,231,231,0.9); // $white
+  color: $black;
+}
